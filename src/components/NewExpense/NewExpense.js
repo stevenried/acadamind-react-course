@@ -7,7 +7,7 @@ const NewExpense = ({ onAddExpense }) => {
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
       ...enteredExpenseData,
-      id: Math.random().toString(),
+      id: crypto.randomUUID(),
     }
     onAddExpense(expenseData)
   }
