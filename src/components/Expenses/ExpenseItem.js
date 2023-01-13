@@ -3,7 +3,7 @@ import Card from '../UI/Card'
 import './ExpenseItem.css'
 
 function ExpenseItem(props) {
-  const amount = props.amount.toLocaleString('en-EN', {
+  const amount = props.amount.toLocaleString('en-US', {
     style: 'currency',
     currency: 'USD',
   })
